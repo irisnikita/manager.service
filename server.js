@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 app.use('/public', express.static('public'));
 app.get('/', (req, res) => {
     res.send({
+        status: res.statusCode,
         nameService: 'Manager service',
         port: PORT
     })
