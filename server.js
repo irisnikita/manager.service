@@ -11,7 +11,7 @@ require('dotenv').config();
 
 
 // Define server
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8101;
 const app = express();
 const server = http.createServer(app);
 
